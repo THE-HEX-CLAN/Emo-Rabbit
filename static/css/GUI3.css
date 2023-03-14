@@ -1,0 +1,69 @@
+.review{
+    float: left;
+    padding-left: 2%; 
+    padding-top: 3%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    color: orangered;
+    font-family: sans-serif;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    margin-left: 1%;
+    
+}
+
+.title{
+    max-width: 100%;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 2%;
+    padding-left: 5%;
+    background-color: orange;
+}
+
+.subtitle{
+    max-width: 100%;
+    background-image:url("/static/images/questionmarks.jpg");   
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2%;
+    clear: both;
+    margin-top: 45%;
+    
+
+}
+
+.title > h1{
+    font-size: xxx-large;
+    font-family: sans-serif;
+}
+.navbar{
+    float: right;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    font-size: larger;
+    padding-right: 2%;
+    font-family: sans-serif;
+    color: orangered;
+}
+.navbar > ul{
+    list-style-type: none;
+}
+
+
+
+  .icons{
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.icons:hover {
+ transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
