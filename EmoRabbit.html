@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Screen3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/GUI3.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/New.css')}}">
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" href="jquery-ui.css">
+        <script src="jquery-ui.js"></script>
+
+        
+    </head>
+    <body>
+        <section class="title">
+            <h1>Emo-Rabbit</h1>
+        </section>
+        <br>
+        
+        <section>
+            <form action = "{{url_for('get_summary')}}" method="POST">
+            <section class="review">
+                <h2>Submit review</h2>
+                <textarea rows="25" cols="70" id="submit" name = "input_text" required></textarea>
+                <br><br>
+                <button id="summarize-button" type="submit">Summarize</button>
+                <button id="reset-button" type="reset">Reset</button>
+            </section>
+            <section class="review">
+                <h2>Summarized review</h2>
+                <textarea rows="25" cols="70" id="summary" name="result">{{result}}</textarea>
+                <br>
+                <textarea rows="3" cols="70"></textarea>
+            </section>
+            </form>
+            <section class="navbar">
+                <ul>
+                    <li><img src="/static/images/home.jpg" class="icons" height="110px" width="110px" style="border-radius:50%;"></li>
+                    <br>
+                    <li>Home</li>
+                    <br><br>
+                    <li><a href="{{ url_for('Database') }}"><img src="/static/images/databse.jpg" class="icons" height="110px" width="110px" style="border-radius:50%;"></a></li>
+                    <br>
+                    <li>Database</li>
+                    <br><br>
+                    <li><a href="{{ url_for('AboutUs') }}"><img src="/static/images/aboutus.jpg" class="icons" height="110px" width="110px" style="border-radius:50%;"></a></li>
+                    <br>
+                    <li>About Us</li>
+                </ul>
+            </section>
+        </section>
+        <section class="subtitle">
+            <h1>Summarize your review with just click of a button</h1>
+            <h3>Emo-Rabbit summarizer can be used to summarize hotel reviews and detect the review author's emotions.
+                Our website uses Natural Language Processing toolkits to locate important information while maintaining the original context.</h3>
+        </section>
+
+        <section class="footer">
+            <section class="social">
+                <a href="https://instagram.com/_chanux_16?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/add/c_jayarathne?share_id=l5O0Yg1USS69NoHPDdhV5A&locale=en_LK"><i class="fab fa-snapchat"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100073890474304&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+            </section>
+    
+            <ul class="list">
+                <li>
+                    <a href="{{ url_for('SignUp') }}">SIGN UP</a>
+                </li>
+                <li>
+                    <a href="">LOGIN</a>
+                </li>
+                <li>
+                    <a href="">BLOG</a>
+                </li>
+                <li>
+                    <a href="">CONTACT</a>
+                </li>
+            </ul>
+            
+    
+        </section>
+
+        <script>
+            $(document).ready(function(){
+                $("#summarize-button").button();
+                $("#reset-button").button();
+                
+            });
+        </script>
+    </body>
+</html>
