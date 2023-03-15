@@ -1,0 +1,177 @@
+.Student-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000 0%, #14000a 76%);
+  }
+  
+  .Student-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+  }
+  
+  
+  
+  .Student-item3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .Student-title {
+    font-size: 38px;
+    font-family: Roboto;
+  }
+  
+  .Student-glassContainer {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 150px;
+    background: linear-gradient(
+      25.6deg,
+      rgba(255, 255, 255, 0.192) 28.69%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
+  }
+  
+  .GlassContainer-Student {
+    margin-left: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+  
+    backdrop-filter: transparent;
+    -webkit-backdrop-filter: blur(16px);
+    width: 1250px;
+    height: 520px;
+    /* align-items: center; */
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color:#a3c2c2 ;
+    margin-top: 120px;
+    background-color: #e1eaea
+    background: linear-gradient(
+      25.6deg,
+      rgba(255, 255, 255, 0.192) 28.69%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow: 0 0 20px 10px rgba(182, 182, 182, 0.1);
+  }
+  
+  .Student-our-team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-family: sans-serif , Roboto;
+    font-weight: bolder;
+    margin-right: 40px;
+  }
+  
+  .hovering-box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    /* max-width: 100%; */
+    height: auto;
+  }
+  
+  .student-image {
+    display: block;
+  }
+  
+  .hovering-box .student-image {
+    max-width: 300px;
+  }
+  
+  .hovering-box .about-Student {
+      text-align: center;
+      font-size: 18px;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  .about-Student {
+      width: 90%;
+  }
+  
+  .hovering-box .Student-infomation {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.671);
+    color: #fff;
+    /* padding: 15px; */
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .hovering-box:hover .Student-infomation, .hovering-box:active .Student-infomation {
+      opacity: 1;
+  }
+  
+  .hovering-box:hover .Student-info_scale_rotate {
+      border-radius: 50%;
+      transform: scale(0) rotateZ(0);
+  }
+  
+  .hovering-box:hover .Student-info_scale_rotate, .hovering-box:active .Student-info_scale_rotate {
+      border-radius: 0%;
+      transform: scale(1) rotateZ(360deg);
+  }
+  
+  .readmore_container {
+    margin-top:20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 7%;
+  }
+  
+  .go-to-editor {
+    margin-left: 5px;
+    background-color: rgb(26, 199, 230);
+    align-items: center;
+    border-radius: 20px;
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  
+  .go-to-editor:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(26, 199, 230);
+  
+  }
+  
+  .StudentFooter {
+    width: 100%;
+    margin-top: 4%;
+  }
+  
+  
