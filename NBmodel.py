@@ -23,6 +23,9 @@ vectorizer = TfidfVectorizer()
 X_train = vectorizer.fit_transform(X_train)
 X_test = vectorizer.transform(X_test)
 
+#Save the vectorizer object as a joblib file
+joblib.dump(vectorizer,"vectorizer.joblib")
+
 # Train a linear support vector machine (SVM) classifier
 classifier = LinearSVC()
 classifier.fit(X_train, y_train)
