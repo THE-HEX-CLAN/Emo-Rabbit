@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 
 
 # Load the dataset
-data = pd.read_csv("/Users/nathaliliyanage/Downloads/tripadvisor_hotel_reviews.csv")
+data = pd.read_csv("C:\\Users\\shanu\\Downloads\\tripadvisor_hotel_reviews.csv")
 
 # Prepare the data for training and testing
 X = data['Review']
