@@ -11,3 +11,8 @@ app = Flask(__name__,static_url_path="/static/css/GUI3.css")
 
 model = joblib.load('sentiment-analysis.joblib')
 vectorizer = joblib.load('vectorizer.joblib')
+
+
+@app.route("/",methods = ["GET","POST"])
+def Index():
+    return(render_template("EmoRabbit.html"))
