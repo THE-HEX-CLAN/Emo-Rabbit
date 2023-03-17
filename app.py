@@ -12,6 +12,9 @@ app = Flask(__name__,static_url_path="/static/css/GUI3.css")
 model = joblib.load('sentiment-analysis.joblib')
 vectorizer = joblib.load('vectorizer.joblib')
 
+@app.route('/Emotion')
+def home():
+    return render_template('Emotion.html')
 
 @app.route("/",methods = ["GET","POST"])
 def Index():
