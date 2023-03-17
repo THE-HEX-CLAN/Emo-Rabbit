@@ -19,7 +19,7 @@ def home():
 
 @app.route("/",methods = ["GET","POST"])
 def Index():
-    return(render_template("EmoRabbit.html"))
+    return(render_template("Emotion.html"))
 
 @app.route("/get_summary",methods=["GET","POST"]) 
 def get_summary():
