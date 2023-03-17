@@ -2,7 +2,14 @@ from flask import Flask ,redirect,url_for,render_template,request,session,flash
 import sqlalchemy
 
 
+
 app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template('index.html')
+
+
 @app.route('/user',methods=["GET","POST"])
 def user():
     email=None
@@ -14,7 +21,7 @@ def user():
         else:
             if "email" in session:
                 email=session["email"]
-        return render_template(user.html,email=email)
+        return render_template('user.html', email=email)
     else:
         flash("You are not logged in")
         return redirect(url_for("login"))
@@ -28,6 +35,7 @@ def logout():
 
 if __name__=="main":
     app.run(debug=True)
+
      
 
 
