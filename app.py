@@ -23,7 +23,7 @@ def Index():
 
 @app.route("/get_summary",methods=["GET","POST"]) 
 def get_summary():
-    if req.method=="POS":
+    if req.method=="POST":
         # The token to the pretrained model
         API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
         headers = {"Authorization": f"Bearer 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"}
