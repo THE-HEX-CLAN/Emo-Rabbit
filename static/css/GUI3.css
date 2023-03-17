@@ -10,6 +10,7 @@
     border-color: orangered;
     border-radius: 10%;
     margin-left: 1%;
+    height: 500px;
     
 }
 
@@ -64,6 +65,47 @@
 
 .icons:hover {
  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#summarize-button{
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10%;
+}
+
+#summarize-button {
+    transition-duration: 0.4s;
+  }
+  
+  #summarize-button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+#reset-button{
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10%;
+}
+#reset-button {
+    transition-duration: 0.4s;
+  }
+  
+#reset-button:hover {
+    background-color: orangered;
+    color: white;
 }
 
 
