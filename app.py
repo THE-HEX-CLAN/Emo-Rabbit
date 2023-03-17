@@ -42,4 +42,8 @@ def get_summary():
         #use the variable names 'result' as given in the front end
         return render_template("GUI3.html", result = output["summary_text"]) 
     else:
-        return(render_template("GUI3.html"))        
+        return(render_template("GUI3.html"))  
+if __name__ == '__main__':
+   # db.create_all()
+    app.debug = True #should be true for testing, should be false for production
+    app.run()          
