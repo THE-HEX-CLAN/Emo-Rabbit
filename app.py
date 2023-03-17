@@ -27,3 +27,8 @@ def get_summary():
         # The token to the pretrained model
         API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
         headers = {"Authorization": f"Bearer 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"}
+
+#send the query to the model and get the response
+        def query(payload):
+            response = requests.post(API_URL, headers=headers, json=payload)
+            return response.json()
