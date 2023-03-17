@@ -32,3 +32,14 @@ def get_summary():
         def query(payload):
             response = requests.post(API_URL, headers=headers, json=payload)
             return response.json()
+        
+#load the query using the input text, minimum and maximum lengths of the summary
+        output = query({
+            "inputs": input_text,
+            "parameters": {"min_length" : min_len, "max_length" : max_len},
+        })[0]
+        #return the summarized output 
+        #use the variable names 'result' as given in the front end
+        return render_template("GUI3.html", result = output["summary_text"]) 
+    else:
+        return(render_template("GUI3.html"))        
