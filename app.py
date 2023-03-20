@@ -12,10 +12,12 @@ app = Flask(__name__,static_url_path="/static/css/GUI3.css")
 model = joblib.load('sentiment-analysis.joblib')
 vectorizer = joblib.load('vectorizer.joblib')
 
+#backend that connects Emotion detection page 
 @app.route('/Emotion')
 def home():
     return render_template('Emotion.html')
 
+#decorator that directs the user to view the sentiment after clicking the button
 @app.route('/predict', methods=['POST'])
 def predict():
     text = request.form['text']
