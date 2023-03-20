@@ -16,7 +16,6 @@ vectorizer = joblib.load('vectorizer.joblib')
 def home():
     return render_template('Emotion.html')
 
-
 @app.route("/",methods = ["GET","POST"])
 def Index():
     return(render_template("EmoRabbit.html"))
