@@ -16,9 +16,12 @@ vectorizer = joblib.load('vectorizer.joblib')
 def home():
     return render_template('Emotion.html')
 
-@app.route("/",methods = ["GET","POST"])
-def Index():
-    return(render_template("Emotion.html"))
+@app.route('/predict', methods=['POST'])
+def predict():
+    text = request.form['text']
+    text = vectorizer.transform([text])
+    prediction = model.predict(text)[0]
+    return render_template('Emotion.html', prediction=prediction)
 
 @app.route("/get_summary",methods=["GET","POST"]) 
 def get_summary():
