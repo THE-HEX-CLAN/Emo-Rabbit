@@ -25,6 +25,18 @@ def predict():
     prediction = model.predict(text)[0]
     return render_template('Emotion.html', prediction=prediction)
 
+@app.route("/SignUp")
+def SignUp():
+    if request.method == 'POST':
+        if not request.form['firstName'] or not request.form['lastName'] or not request.form['email'] or not request.form['password']:
+            flash('Please enter all the fields','error')
+        else:
+           signUp = SignUp(request.form['name'], request.form['city'],
+            request.form['addr'], request.form['pin']) 
+          
+           flash('Record was successfully added')   
+    return(render_template("signup.html"))
+
 @app.route("/AboutUs")
 def AboutUs():
     return(render_template("AboutUs.html"))
