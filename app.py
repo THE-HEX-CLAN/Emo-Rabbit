@@ -44,6 +44,7 @@ def AboutUs():
 @app.route("/get_summary",methods=["GET","POST"]) 
 def get_summary():
     if req.method=="POST":
+        input_text = request.form["input_text"]
         # The token to the pretrained model
         API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
         headers = {"Authorization": f"Bearer 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"}
