@@ -9,3 +9,15 @@
       <h1>Emo-Rabbit</h1>
     </section>
     <br>
+    <section class="form">
+      <form method="POST" action="/predict">
+        <label for="text" style="color:orangered; font-size: x-large; font-weight: bold;">Enter Review to detect sentiment</label>
+        <br><br>
+        <!--<input type="text" id="text" name="text" size="80" style="width: 200px; height: 50px;"> -->
+        <textarea rows="25" cols="70" id="text" name="text" required></textarea>
+        <br><br>
+        <input type="submit" value="Submit" id="buttons">
+        <input type="reset" value="Reset" id="buttons">
+      </form>
+      <p>The sentiment of the text is: {{ prediction }}</p>
+    </section>
