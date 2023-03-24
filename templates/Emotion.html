@@ -9,3 +9,36 @@
       <h1>Emo-Rabbit</h1>
     </section>
     <br>
+<<<<<<< HEAD
+=======
+    <section class="form">
+      <form method="POST" action="/predict">
+        <label for="text" style="color:orangered; font-size: x-large; font-weight: bold;">Enter Review to detect sentiment</label>
+        <br><br>
+        <!--<input type="text" id="text" name="text" size="80" style="width: 200px; height: 50px;"> -->
+        <textarea rows="25" cols="70" id="text" name="text" required></textarea>
+        <br><br>
+        <input type="submit" value="Submit" id="buttons">
+        <input type="reset" value="Reset" id="buttons">
+      </form>
+      <p>The sentiment of the text is: {{ prediction }}</p>
+    </section>
+    <section class="navbar">
+      <ul>
+        <li><a href="{{ url_for('Index') }}"><img src="/static/images/home.jpg" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <br>
+        <li>Home</li>
+        <br>
+        <li><a href="{{ url_for('home') }}"><img src="/static/images/aboutus.jpg" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <br>
+        <li>Emo-Detector</li>
+        <li><a href="{{ url_for('SignUp') }}"><img src="/static/images/databse.jpg" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <br>
+        <li>Database</li>
+        <br>
+        <li><a href="{{ url_for('AboutUs') }}"><img src="/static/images/aboutus.jpg" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <br>
+        <li>About Us</li>
+    </ul>
+  </section>
+>>>>>>> 8d03ec48d239f62a327f54e7c62821d980596a70
