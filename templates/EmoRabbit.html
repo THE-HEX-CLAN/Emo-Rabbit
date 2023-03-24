@@ -21,7 +21,7 @@
             <form action = "{{url_for('get_summary')}}" method="POST">
             <section class="review">
                 <h2>Submit review</h2>
-                <textarea rows="25" cols="70" id="submit" name = "input_text" required></textarea>
+                <textarea rows="25" cols="70" id="submit" name="input_text" required>{{original_text}}</textarea>
                 <br><br>
                 <button id="summarize-button" type="submit">Summarize</button>
                 <button id="reset-button" type="reset">Reset</button>
