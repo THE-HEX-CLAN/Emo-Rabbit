@@ -31,24 +31,16 @@ def predict():
     text = request.form['text']
     text = vectorizer.transform([text])
     prediction = model.predict(text)[0]
-
-
-    # Save the original and summarized review to the database
+# Save the original and summarized review to the database
     review = Review(original_review=text, summarized_review=prediction)
     db.session.add(review)
     db.session.commit()
-
-
-
-
     return render_template('Emotion.html', prediction=prediction)
-
 
 @app.route('/reviews')
 def reviews():
     reviews = Review.query.all()
     return render_template('review.html', reviews=reviews)
-
 
 @app.route("/SignUp")
 def SignUp():
@@ -61,8 +53,6 @@ def SignUp():
           
            flash('Record was successfully added')   
     return(render_template("signup.html"))
-
-
 
 @app.route("/AboutUs")
 def AboutUs():
@@ -94,7 +84,8 @@ def get_summary():
         #use the variable names 'result' as given in the front end
         return render_template("GUI3.html", result = output["summary_text"]) 
     else:
-        return(render_template("GUI3.html"))  
+        return(render_template("GUI3.html")) 
+     
 if __name__ == '__main__':
    # db.create_all()
     app.debug = True #should be true for testing, should be false for production
