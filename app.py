@@ -6,11 +6,19 @@ import requests
 #from flask_sqlalchemy import SQLAlchemy
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__,static_url_path="/static/css/GUI3.css")
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///reviews.db'
+db = SQLAlchemy(app)
 
 model = joblib.load('sentiment-analysis.joblib')
 vectorizer = joblib.load('vectorizer.joblib')
+
+class Review(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    original_review = db.Column(db.String(1000))
+    summarized_review = db.Column(db.String(1000))
 
 #backend that connects Emotion detection page 
 @app.route('/Emotion')
@@ -23,7 +31,24 @@ def predict():
     text = request.form['text']
     text = vectorizer.transform([text])
     prediction = model.predict(text)[0]
+
+
+    # Save the original and summarized review to the database
+    review = Review(original_review=text, summarized_review=prediction)
+    db.session.add(review)
+    db.session.commit()
+
+
+
+
     return render_template('Emotion.html', prediction=prediction)
+
+
+@app.route('/reviews')
+def reviews():
+    reviews = Review.query.all()
+    return render_template('review.html', reviews=reviews)
+
 
 @app.route("/SignUp")
 def SignUp():
