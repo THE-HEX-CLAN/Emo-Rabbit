@@ -6,17 +6,7 @@
 </head>
 <body>
     <header>
-        <h1>Login </h1>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                {% if 'username' in session %}
-                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                {% else %}
-                    <li><a href="{{ url_for('login') }}">Login</a></li>
-                {% endif %}
-            </ul>
-        </nav>
+        
     </header>
     <main>
         {% block content %}{% endblock %}

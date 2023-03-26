@@ -62,6 +62,8 @@ def SignUp():
            flash('Record was successfully added')   
     return(render_template("signup.html"))
 
+
+
 @app.route("/AboutUs")
 def AboutUs():
     return(render_template("AboutUs.html"))
