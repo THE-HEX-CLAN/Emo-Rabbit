@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+    <h1>Reviews</h1>
+    {% for review in reviews %}
+        <div>
+            <h3>Original Review:</h3>
+            <p>{{ review.original_review }}</p>
+            <h3>Summarized Review:</h3>
+            <p>{{ review.summarized_review }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
