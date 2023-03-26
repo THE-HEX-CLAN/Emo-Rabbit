@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='/static/css/login_page.css')}}">
+ </head>
     <h1>Login</h1>
     {% if error %}
         <p>{{ error }}</p>

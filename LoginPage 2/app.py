@@ -2,7 +2,7 @@ from flask import Flask, redirect, render_template, request, session, url_for
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import check_password_hash, generate_password_hash
 
-app = Flask(__name__,static_url_path="/users/nathaliliyanage/Documents/GitHub/Emo-Rabbit/LoginPage2/static/css/login_page.css")
+app = Flask(__name__,static_url_path="/static/css/login_page.css")
 app.config['SECRET_KEY'] = 'your_secret_key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///example.db'
 db = SQLAlchemy(app)
