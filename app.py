@@ -53,6 +53,10 @@ def get_summary():
         def query(payload):
             response = requests.post(API_URL, headers=headers, json=payload)
             return response.json()
+#load the query using the input text, minimum and maximum lengths of the summary
+        input_text = req.form["input_text"] 
+        max_len = 1000
+        min_len = 20
         
 #load the query using the input text, minimum and maximum lengths of the summary
         output = query({
