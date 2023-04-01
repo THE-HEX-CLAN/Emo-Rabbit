@@ -22,3 +22,6 @@ body{
     background-color: #ddd;
     height: 30px;
   }
+  .table td{
+    height: 100px;
+  }
