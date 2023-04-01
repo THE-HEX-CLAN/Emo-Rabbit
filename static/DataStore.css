@@ -18,3 +18,7 @@ body{
     text-align: left;
     width: 25%;
   }
+  .table th {
+    background-color: #ddd;
+    height: 30px;
+  }
