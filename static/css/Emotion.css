@@ -76,3 +76,15 @@ input[type="text"] {
     
 
 }
+
+.socialmedia{
+    clear: left;
+    padding-top: 40px; 
+    background-color: orange; 
+    border-top-style: solid; 
+    border-width: 20px; 
+    border-color: orangered; 
+    padding-left: 20px;  
+    padding-bottom: 20px; 
+    color: white;
+}
