@@ -31,6 +31,7 @@ def predict():
     text = request.form['text']
     text = vectorizer.transform([text])
     prediction = model.predict(text)[0]
+    
 # Save the original and summarized review to the database
     #review = Review(original_review=text, summarized_review=prediction)
     #db.session.add(review)
