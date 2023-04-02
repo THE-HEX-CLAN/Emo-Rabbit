@@ -60,3 +60,7 @@ input[type="text"] {
     padding-left: 5%;
     background-color: orange;
 }
+.title > h1{
+    font-size: xxx-large;
+    font-family: sans-serif;
+}
