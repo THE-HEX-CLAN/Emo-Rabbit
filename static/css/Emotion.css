@@ -21,3 +21,10 @@ input[type="text"] {
     box-sizing: border-box;
     resize: vertical;
 }
+.icons{
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    border-radius: 50%;
+}
