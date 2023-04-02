@@ -52,3 +52,11 @@ input[type="text"] {
     background-color: orangered;
     color: white;
 }
+.title{
+    max-width: 100%;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 2%;
+    padding-left: 5%;
+    background-color: orange;
+}
