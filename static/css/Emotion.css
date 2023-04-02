@@ -64,3 +64,15 @@ input[type="text"] {
     font-size: xxx-large;
     font-family: sans-serif;
 }
+
+.subtitle{
+    max-width: 100%;
+    background-image:url("/static/images/questionmarks.jpg");   
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2%;
+    clear: both;
+    margin-top: 45%;
+    
+
+}
