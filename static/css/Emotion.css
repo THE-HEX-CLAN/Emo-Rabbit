@@ -43,3 +43,12 @@ input[type="text"] {
     font-size: 14px;
     border-radius: 10%;
 }
+
+#buttons{
+    transition-duration: 0.4s;
+}
+  
+  #buttons:hover {
+    background-color: orangered;
+    color: white;
+}
