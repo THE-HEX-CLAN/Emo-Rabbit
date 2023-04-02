@@ -21,11 +21,37 @@ input[type="text"] {
     box-sizing: border-box;
     resize: vertical;
 }
+<<<<<<< HEAD
 
-.icons{
-    padding: 0px;
-    background-color: white;
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
-    border-radius: 50%;
+
+=======
+.form{  
+    float: left;
+    width: fit-content;
+    margin-left: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-style: outset;
+    color: orangered;
+    font-family: sans-serif;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    
+}
+.navbar{
+    float: right;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    font-size: larger;
+    padding-right: 2%;
+    font-family: sans-serif;
+    color: orangered;
+}
+.navbar > ul{
+    list-style-type: none;
+>>>>>>> 95e55a7a6b17390ecc73a0ea7a69ce23605cecf2
 }
