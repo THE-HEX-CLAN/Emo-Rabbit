@@ -34,6 +34,10 @@ def AboutUs():
 
 @app.route("/database")
 def Database():
+    return(render_template("DataStore.html"))
+
+@app.route("/database")
+def Database():
     return(render_template("News.html"))
 
 @app.route("/SignUp")
