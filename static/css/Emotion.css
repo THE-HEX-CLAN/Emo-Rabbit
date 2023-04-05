@@ -28,3 +28,63 @@ input[type="text"] {
     margin: 0 auto;
     border-radius: 50%;
 }
+.icons:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#buttons{
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10%;
+}
+
+#buttons{
+    transition-duration: 0.4s;
+}
+  
+  #buttons:hover {
+    background-color: orangered;
+    color: white;
+}
+.title{
+    max-width: 100%;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 2%;
+    padding-left: 5%;
+    background-color: orange;
+}
+.title > h1{
+    font-size: xxx-large;
+    font-family: sans-serif;
+}
+
+.subtitle{
+    max-width: 100%;
+    background-image:url("/static/images/questionmarks.jpg");   
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2%;
+    clear: both;
+    margin-top: 45%;
+    
+
+}
+
+.socialmedia{
+    clear: left;
+    padding-top: 40px; 
+    background-color: orange; 
+    border-top-style: solid; 
+    border-width: 20px; 
+    border-color: orangered; 
+    padding-left: 20px;  
+    padding-bottom: 20px; 
+    color: white;
+}
