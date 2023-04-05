@@ -110,3 +110,16 @@
 }
 
 .socialmedia{clear: left; padding-top: 40px; background-color: orange; border-top-style: solid; border-width: 20px; border-color: orangered; padding-left: 20px;  padding-bottom: 20px; color: white;}
+
+#logo{
+    height: 90px;
+    width:90px;
+    border-radius: 50%;
+    float: left;
+    padding-top: 30px;
+    padding-left: 10px;
+    transition: transform .2s; /* Animation */
+}
+#logo:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   }
