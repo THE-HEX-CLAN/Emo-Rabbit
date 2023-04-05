@@ -15,13 +15,14 @@
       <form method="POST" action="/predict">
         <label for="text" style="color:orangered; font-size: x-large; font-weight: bold;">Enter Review to detect sentiment</label>
         <br><br>
-        <!--<input type="text" id="text" name="text" size="80" style="width: 200px; height: 50px;"> -->
-        <textarea rows="25" cols="70" id="text" name="text" required></textarea>
+        <textarea rows="25" cols="70" id="text" name="text" required>{{ request.form['text'] if request.method == 'POST' else '' }}</textarea>
         <br><br>
         <input type="submit" value="Submit" id="buttons">
         <input type="reset" value="Reset" id="buttons">
       </form>
+      {% if prediction %}
       <p style="font-size:x-large;">The sentiment of the review is: {{ prediction }}</p>
+      {% endif %}
     </section>
 
     <section class="navbar">
