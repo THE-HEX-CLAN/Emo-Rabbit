@@ -48,6 +48,7 @@
     padding-right: 2%;
     font-family: sans-serif;
     color: orangered;
+    height: 600px;
 }
 .navbar > ul{
     list-style-type: none;
