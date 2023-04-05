@@ -95,3 +95,12 @@ form {
      background-color: orange;
   }
 
+  #logo{
+    height: 90px;
+    width:90px;
+    border-radius: 50%;
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    transition: transform .2s; /* Animation */
+}
