@@ -5,15 +5,15 @@ This is a web application that summarizes and detects the emotion of hotel revie
 How to use
 
 Clone the repository
-Install dependencies with pip install -r requirements.txt
-Run the app with python app.py
-Navigate to http://localhost:5000 in your web browser
+Install dependencies with pip install -r requirements.txt.
+Run the app with python app.py.
+Navigate to http://localhost:5000 in your web browser.
 
 Features
 
-Enter any hotel review text and the app will summarize it and classify it as either positive, negative or neutral
-View a history of all past reviews and their classifications
-Access statistics on the most common emotions detected in the reviews
+Enter any hotel review text and the app will summarize it and classify it as either positive, negative or neutral.
+View a history of all past reviews and their classifications.
+Access statistics on the most common emotions detected in the reviews.
 
 How it works
 
@@ -22,15 +22,15 @@ The application uses a machine learning model trained on the TfIdf algorithm to 
 
 Technologies used
 
-Python Flask for the backend
-HTML, CSS and JavaScript for the frontend
-TfIdf algorithm for machine learning model training
-TextRank algorithm for text summarization
+Python Flask for the backend.
+HTML, CSS and JavaScript for the frontend.
+TfIdf algorithm for machine learning model training.
+TextRank algorithm for text summarization.
 
 Future improvements
 
-Improve the accuracy of the emotion detection model
-Add support for multiple languages
-Incorporate sentiment analysis to provide more granular classifications of emotions
-Improve the UI to make it more user-friendly and visually appealing
+Improve the accuracy of the emotion detection model.
+Add support for multiple languages.
+Incorporate sentiment analysis to provide more granular classifications of emotions.
+Improve the UI to make it more user-friendly and visually appealing.
 
