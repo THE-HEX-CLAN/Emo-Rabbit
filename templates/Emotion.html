@@ -23,22 +23,39 @@
       </form>
       <p>The sentiment of the text is: {{ prediction }}</p>
     </section>
+
+    <br><br>
+    
     <section class="navbar">
       <ul>
-        <img src="https://drive.google.com/uc?export=view&id=1O6cHz9nUOeSziPbX0jX7ktSaWrlk9g7Q" class="icons" height="80px" width="80px" style="border-radius:50%;">
+        <a href="{{ url_for('home') }}"><img src="https://drive.google.com/uc?export=view&id=1O6cHz9nUOeSziPbX0jX7ktSaWrlk9g7Q" class="icons" height="80px" width="80px" style="border-radius:50%;"></a>
         <br>
         <li>Home</li>
         <br>
-        <li>Emo-Detector</li>
-        <img src="https://drive.google.com/uc?export=view&id=1ohlHsAQpGUonn0-GLgeCYWTBbcDeJLTr" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <a href="{{ url_for('home') }}"><img src="https://drive.google.com/uc?export=view&id=1ohlHsAQpGUonn0-GLgeCYWTBbcDeJLTr" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
         <br>
-        <img src="https://drive.google.com/uc?export=view&id=1DMEEEV2RzcM9f0OnIs8zmm6PecWsEEJ5" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <li>Emo-Detector</li>
+        <a href="{{ url_for('SignUp') }}"><img src="https://drive.google.com/uc?export=view&id=1DMEEEV2RzcM9f0OnIs8zmm6PecWsEEJ5" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
         <br>
         <li>Database</li>
         <br>
-        <img src="https://drive.google.com/uc?export=view&id=1Wpqg0vwBa7a2JBfKx0s47D49637xQG02" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <a href="{{ url_for('AboutUs') }}"><img src="https://drive.google.com/uc?export=view&id=1Wpqg0vwBa7a2JBfKx0s47D49637xQG02" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
         <br>
         <li>About Us</li>
     </ul>
   </section>
+
+
+  
+  <div class="socialmedia">
+    <p>How can we help?</p>
+    <p>+1-855-610-TREE</p>
+    <p>Call Us. Its toll free</p>
+    <img class="socialmedia" src="https://drive.google.com/uc?export=view&id=1JM289QevD4BvMLAOq8oGf_kNUw94ro2T" alt="Instagram" height="40" width="40" style="border-radius: 50%; padding-right: 50px;">
+    <img class="socialmedia" src="https://drive.google.com/uc?export=view&id=1tQhyGo5C9exLz1KnH4_eRXqIETJ2fujF" alt="Facebook" height="40" width="40" style="border-radius: 50%; padding-right: 50px;">
+    <img class="socialmedia" src="https://drive.google.com/uc?export=view&id=13WFGCechX2DpqxLY0ojtMPs4pFUBSVzr" alt="Twitter" height="40" width="40" style="border-radius: 50%; padding-right: 50px;">
+  </div> 
+
+</body>
+</html>
 
