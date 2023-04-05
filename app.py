@@ -32,11 +32,9 @@ def Index():
 def AboutUs():
     return(render_template("AboutUs.html"))
 
-
-
 @app.route("/database")
 def Database():
-    return(render_template("News.html"))
+    return(render_template("Datastore.html"))
 
 @app.route("/SignUp")
 def SignUp():
