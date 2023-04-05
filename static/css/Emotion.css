@@ -120,7 +120,9 @@ input[type="text"] {
      border-color: orangered; 
      padding-left: 20px;  
      padding-bottom: 20px; 
-     color: color;}
+     color: color;
+     transition: transform .2s; /* Animation */
+    }
 
      #logo{
         height: 90px;
