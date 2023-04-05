@@ -52,7 +52,8 @@ def SignUp():
 
 @app.route("/get_summary",methods=["GET","POST"]) 
 def get_summary():
-    if req.method=="POST":
+    if req.method =="POST":
+        input_text = request.form["input_text"]
         # The token to the pretrained model
         API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
         headers = {"Authorization": f"Bearer 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"}
@@ -75,7 +76,7 @@ def get_summary():
         })[0]
         #return the summarized output 
         #use the variable names 'result' as given in the front end
-        return render_template("EmoRabbit.html", result = output["summary_text"]) 
+        return render_template("EmoRabbit.html", result = output["summary_text"],original_text=input_text)  
     else:
         return(render_template("EmoRabbit.html"))
 
