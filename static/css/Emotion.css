@@ -21,6 +21,22 @@ input[type="text"] {
     box-sizing: border-box;
     resize: vertical;
 }
+.form{  
+    float: left;
+    width: fit-content;
+    margin-left: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-style: outset;
+    color: orangered;
+    font-family: sans-serif;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    
+}
 .icons{
     padding: 0px;
     background-color: white;
