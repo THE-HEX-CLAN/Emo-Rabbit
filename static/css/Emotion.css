@@ -47,6 +47,10 @@ input[type="text"] {
     font-family: sans-serif;
     color: orangered;
 }
+.navbar > ul{
+    list-style-type: none;
+}
+
 .icons{
     padding: 0px;
     background-color: white;
