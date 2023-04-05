@@ -1,5 +1,5 @@
 body {
-        font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 .title{
     max-width: 100%;
@@ -37,6 +37,7 @@ input[type="text"] {
     border-radius: 10%;
     
 }
+
 .navbar{
     float: right;
     border-style: outset;
@@ -46,20 +47,24 @@ input[type="text"] {
     padding-right: 2%;
     font-family: sans-serif;
     color: orangered;
+    height:600px;
 }
 .navbar > ul{
     list-style-type: none;
 }
 
-.icons{
+
+
+  .icons{
     padding: 0px;
     background-color: white;
     transition: transform .2s; /* Animation */
     margin: 0 auto;
     border-radius: 50%;
 }
+
 .icons:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #buttons{
@@ -76,12 +81,13 @@ input[type="text"] {
 
 #buttons{
     transition-duration: 0.4s;
-}
+  }
   
   #buttons:hover {
     background-color: orangered;
     color: white;
 }
+
 .title{
     max-width: 100%;
     border-style: outset;
@@ -109,12 +115,9 @@ input[type="text"] {
     clear: left; 
     padding-top: 40px; 
     background-color: orange; 
-    border-top-style: solid; 
-    border-width: 20px; 
-    border-color: orangered; 
-    padding-left: 20px;  
-    padding-bottom: 20px; 
-    color: white;
-}
-
-
+    border-top-style: solid;
+     border-width: 20px; 
+     border-color: orangered; 
+     padding-left: 20px;  
+     padding-bottom: 20px; 
+     color: color;}
