@@ -37,6 +37,16 @@ input[type="text"] {
     border-radius: 10%;
     
 }
+.navbar{
+    float: right;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    font-size: larger;
+    padding-right: 2%;
+    font-family: sans-serif;
+    color: orangered;
+}
 .icons{
     padding: 0px;
     background-color: white;
