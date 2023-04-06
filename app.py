@@ -13,28 +13,28 @@ app = Flask(__name__,static_url_path="/static/css/GUI3.css")
 model = joblib.load('sentiment-analysis.joblib')
 vectorizer = joblib.load('vectorizer.joblib')
 
-@app.route('/Emotion')
+@app.route('/Emotion')   #decoratr for the emotion page
 def home():
-    return render_template('Emotion.html')
+    return render_template('Emotion.html')   #display the front end webpage to user
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])    #pass the user input to the backend
 def predict():
     text = request.form['text']
-    text = vectorizer.transform([text])
+    text = vectorizer.transform([text])         ##send the text to the vectorizer trained model
     prediction = model.predict(text)[0]
-    return render_template('Emotion.html', prediction=prediction)
+    return render_template('Emotion.html', prediction=prediction)   ##return the output
 
 @app.route("/",methods = ["GET","POST"])
 def Index():
-    return(render_template("EmoRabbit.html"))
+    return(render_template("EmoRabbit.html"))     #display the front end of the main page
 
 @app.route("/AboutUs")
 def AboutUs():
-    return(render_template("AboutUs.html"))
+    return(render_template("AboutUs.html"))      #display the bout us page
 
 @app.route("/database")
 def Database():
-    return(render_template("Datastore.html"))
+    return(render_template("Datastore.html"))        #display the databse to the user
 
 @app.route("/SignUp")
 def SignUp():
