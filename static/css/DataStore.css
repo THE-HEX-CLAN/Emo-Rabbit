@@ -25,3 +25,11 @@ body{
   .table td{
     height: 100px;
   }
+  .title{
+    max-width: 100%;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 2%;
+    padding-left: 5%;
+    background-color: #ffa500;
+}
